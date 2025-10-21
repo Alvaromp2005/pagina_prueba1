@@ -1,0 +1,103 @@
+{
+  "timestamp": "2025-10-03T13:08:26.563Z",
+  "duration": 6,
+  "successRate": 30,
+  "summary": {
+    "passed": 3,
+    "failed": 5,
+    "warnings": 2
+  },
+  "testData": {
+    "workflows": [],
+    "supabaseData": null,
+    "frontendBuild": null
+  },
+  "results": [
+    {
+      "test": "Backend Health Check",
+      "status": "pass",
+      "details": "Status: OK, Uptime: 2328s",
+      "duration": 12,
+      "data": {
+        "status": "OK",
+        "timestamp": "2025-10-03T13:08:20.503Z",
+        "uptime": 2327.700162375,
+        "environment": "development",
+        "port": "3000"
+      },
+      "timestamp": "2025-10-03T13:08:20.505Z"
+    },
+    {
+      "test": "CORS Configuration",
+      "status": "warn",
+      "details": "CORS headers missing",
+      "duration": null,
+      "data": null,
+      "timestamp": "2025-10-03T13:08:20.505Z"
+    },
+    {
+      "test": "N8N Integration",
+      "status": "fail",
+      "details": "Error: Request failed with status code 500",
+      "duration": null,
+      "data": null,
+      "timestamp": "2025-10-03T13:08:23.514Z"
+    },
+    {
+      "test": "Supabase Integration",
+      "status": "fail",
+      "details": "Error: Request failed with status code 404",
+      "duration": null,
+      "data": null,
+      "timestamp": "2025-10-03T13:08:26.524Z"
+    },
+    {
+      "test": "Vite Proxy Configuration",
+      "status": "fail",
+      "details": "Proxy no configurado",
+      "duration": null,
+      "data": null,
+      "timestamp": "2025-10-03T13:08:26.525Z"
+    },
+    {
+      "test": "API Endpoint /api/n8n/workflows",
+      "status": "pass",
+      "details": "HTTP 500 (accesible)",
+      "duration": null,
+      "data": null,
+      "timestamp": "2025-10-03T13:08:26.531Z"
+    },
+    {
+      "test": "API Endpoint /api/supabase/test",
+      "status": "fail",
+      "details": "Endpoint no encontrado (404)",
+      "duration": null,
+      "data": null,
+      "timestamp": "2025-10-03T13:08:26.533Z"
+    },
+    {
+      "test": "API Endpoint /health",
+      "status": "pass",
+      "details": "HTTP 200 (accesible)",
+      "duration": null,
+      "data": null,
+      "timestamp": "2025-10-03T13:08:26.535Z"
+    },
+    {
+      "test": "Environment Variables Security",
+      "status": "fail",
+      "details": "Variables sensibles encontradas en frontend",
+      "duration": null,
+      "data": null,
+      "timestamp": "2025-10-03T13:08:26.559Z"
+    },
+    {
+      "test": "End-to-End Workflow",
+      "status": "warn",
+      "details": "Endpoint de workflow no implementado (normal en desarrollo)",
+      "duration": null,
+      "data": null,
+      "timestamp": "2025-10-03T13:08:26.563Z"
+    }
+  ]
+}

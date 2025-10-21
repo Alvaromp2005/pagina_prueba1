@@ -1,0 +1,89 @@
+{
+  "timestamp": "2025-10-03T13:07:59.703Z",
+  "duration": 8,
+  "healthScore": 64,
+  "summary": {
+    "healthy": 7,
+    "unhealthy": 0,
+    "warnings": 4
+  },
+  "results": [
+    {
+      "service": "Backend API",
+      "status": "healthy",
+      "details": "Uptime: 2299s, Env: development",
+      "responseTime": 13,
+      "timestamp": "2025-10-03T13:07:51.648Z"
+    },
+    {
+      "service": "Backend Stability",
+      "status": "healthy",
+      "details": "Uptime: 2299s",
+      "responseTime": null,
+      "timestamp": "2025-10-03T13:07:51.649Z"
+    },
+    {
+      "service": "Health Endpoint",
+      "status": "healthy",
+      "details": "HTTP 200",
+      "responseTime": 1,
+      "timestamp": "2025-10-03T13:07:51.650Z"
+    },
+    {
+      "service": "N8N Workflows",
+      "status": "healthy",
+      "details": "HTTP 500",
+      "responseTime": 2,
+      "timestamp": "2025-10-03T13:07:51.652Z"
+    },
+    {
+      "service": "Supabase Test",
+      "status": "warning",
+      "details": "HTTP 404 (esperado: 200|401|500)",
+      "responseTime": null,
+      "timestamp": "2025-10-03T13:07:51.653Z"
+    },
+    {
+      "service": "N8N Service",
+      "status": "warning",
+      "details": "Error: Request failed with status code 500",
+      "responseTime": null,
+      "timestamp": "2025-10-03T13:07:55.667Z"
+    },
+    {
+      "service": "Supabase Service",
+      "status": "warning",
+      "details": "Error: Request failed with status code 404",
+      "responseTime": null,
+      "timestamp": "2025-10-03T13:07:59.679Z"
+    },
+    {
+      "service": "Proxy Configuration",
+      "status": "warning",
+      "details": "Proxy no encontrado en vite.config.js",
+      "responseTime": null,
+      "timestamp": "2025-10-03T13:07:59.679Z"
+    },
+    {
+      "service": "Disk Space",
+      "status": "healthy",
+      "details": "Uso: 13%",
+      "responseTime": null,
+      "timestamp": "2025-10-03T13:07:59.691Z"
+    },
+    {
+      "service": "Memory",
+      "status": "healthy",
+      "details": "Proceso ejecutándose normalmente",
+      "responseTime": null,
+      "timestamp": "2025-10-03T13:07:59.698Z"
+    },
+    {
+      "service": "LocalStack",
+      "status": "healthy",
+      "details": "5 servicios activos: ec2, iam, s3, sqs, sts",
+      "responseTime": 5,
+      "timestamp": "2025-10-03T13:07:59.703Z"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "waveresearch-backend",
+  "version": "1.0.0",
+  "description": "Backend API para WaveResearch - Manejo seguro de servicios y autenticación",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "echo \"Tests pendientes de implementar\" && exit 0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  },
+  "keywords": [
+    "backend",
+    "api",
+    "n8n",
+    "waveresearch",
+    "express"
+  ],
+  "author": "WaveResearch Team",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

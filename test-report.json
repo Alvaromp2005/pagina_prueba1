@@ -1,0 +1,157 @@
+{
+  "timestamp": "2025-10-03T13:07:50.526Z",
+  "duration": 1,
+  "results": {
+    "passed": 25,
+    "failed": 1,
+    "warnings": 3,
+    "tests": [
+      {
+        "name": "Archivo .env.example (Frontend)",
+        "status": "PASS",
+        "details": "Encontrado: /Users/danielmoreno/Desktop/localstack dev/DynamicTest/WaveResearchFront/.env.example"
+      },
+      {
+        "name": "Archivo .env.production.example",
+        "status": "PASS",
+        "details": "Encontrado: /Users/danielmoreno/Desktop/localstack dev/DynamicTest/WaveResearchFront/.env.production.example"
+      },
+      {
+        "name": "Archivo .env.example (Backend)",
+        "status": "PASS",
+        "details": "Encontrado: /Users/danielmoreno/Desktop/localstack dev/DynamicTest/WaveResearchFront/backend/.env.example"
+      },
+      {
+        "name": "Archivo terraform.tfvars.example",
+        "status": "PASS",
+        "details": "Encontrado: /Users/danielmoreno/Desktop/localstack dev/DynamicTest/terraform.tfvars.example"
+      },
+      {
+        "name": "Seguridad: .env no en repo",
+        "status": "PASS",
+        "details": "Archivo .env no encontrado (correcto)"
+      },
+      {
+        "name": "Seguridad: .env.production no en repo",
+        "status": "WARN",
+        "details": "ADVERTENCIA: Archivo .env encontrado"
+      },
+      {
+        "name": "Seguridad: .env no en repo",
+        "status": "WARN",
+        "details": "ADVERTENCIA: Archivo .env encontrado"
+      },
+      {
+        "name": "package.json Frontend",
+        "status": "PASS",
+        "details": "Nombre: waveresearch-interface, Versión: 0.0.0"
+      },
+      {
+        "name": "Dependencia react",
+        "status": "PASS",
+        "details": "Versión: ^18.3.1"
+      },
+      {
+        "name": "Dependencia vite",
+        "status": "PASS",
+        "details": "Versión: ^5.4.20"
+      },
+      {
+        "name": "Dependencia axios",
+        "status": "PASS",
+        "details": "Versión: ^1.12.2"
+      },
+      {
+        "name": "package.json Backend",
+        "status": "PASS",
+        "details": "Nombre: waveresearch-backend, Versión: 1.0.0"
+      },
+      {
+        "name": "Gitignore .env",
+        "status": "PASS",
+        "details": ".env está en .gitignore"
+      },
+      {
+        "name": "Gitignore node_modules",
+        "status": "PASS",
+        "details": "node_modules está en .gitignore"
+      },
+      {
+        "name": "Credenciales Hardcodeadas",
+        "status": "WARN",
+        "details": "Posibles credenciales encontradas en código"
+      },
+      {
+        "name": "Archivo Terraform backend_ecs.tf",
+        "status": "PASS",
+        "details": "Encontrado: /Users/danielmoreno/Desktop/localstack dev/DynamicTest/backend_ecs.tf"
+      },
+      {
+        "name": "Archivo Terraform frontend_s3.tf",
+        "status": "PASS",
+        "details": "Encontrado: /Users/danielmoreno/Desktop/localstack dev/DynamicTest/frontend_s3.tf"
+      },
+      {
+        "name": "Archivo Terraform ecr.tf",
+        "status": "PASS",
+        "details": "Encontrado: /Users/danielmoreno/Desktop/localstack dev/DynamicTest/ecr.tf"
+      },
+      {
+        "name": "Archivo Terraform iam.tf",
+        "status": "PASS",
+        "details": "Encontrado: /Users/danielmoreno/Desktop/localstack dev/DynamicTest/iam.tf"
+      },
+      {
+        "name": "Archivo Terraform provider.tf",
+        "status": "PASS",
+        "details": "Encontrado: /Users/danielmoreno/Desktop/localstack dev/DynamicTest/provider.tf"
+      },
+      {
+        "name": "Archivo Docker Compose",
+        "status": "PASS",
+        "details": "Encontrado: /Users/danielmoreno/Desktop/localstack dev/DynamicTest/docker-compose.yml"
+      },
+      {
+        "name": "Backend Health Check",
+        "status": "PASS",
+        "details": "Status: OK, Uptime: 2296s"
+      },
+      {
+        "name": "Backend Environment",
+        "status": "PASS",
+        "details": "Environment: development"
+      },
+      {
+        "name": "Backend Port",
+        "status": "PASS",
+        "details": "Puerto: 3000"
+      },
+      {
+        "name": "Endpoint /health",
+        "status": "PASS",
+        "details": "HTTP 200 (esperado: 200)"
+      },
+      {
+        "name": "Endpoint /api/n8n/workflows",
+        "status": "PASS",
+        "details": "HTTP 500 (esperado: 200 o 401 o 500)"
+      },
+      {
+        "name": "Endpoint /api/supabase/test",
+        "status": "FAIL",
+        "details": "HTTP 404 (esperado: 200 o 401 o 500)"
+      },
+      {
+        "name": "Dependencias Frontend",
+        "status": "PASS",
+        "details": "node_modules encontrado"
+      },
+      {
+        "name": "Frontend Build",
+        "status": "PASS",
+        "details": "Build exitoso, carpeta dist creada"
+      }
+    ]
+  },
+  "successRate": 86
+}

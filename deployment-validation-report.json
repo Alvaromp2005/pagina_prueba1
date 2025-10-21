@@ -1,0 +1,237 @@
+{
+  "timestamp": "2025-10-03T13:08:36.955Z",
+  "duration": 5,
+  "readinessScore": 79,
+  "deploymentType": "both",
+  "summary": {
+    "passed": 22,
+    "failed": 2,
+    "warnings": 4
+  },
+  "results": [
+    {
+      "category": "Environment Files",
+      "item": "Frontend .env.example",
+      "status": "pass",
+      "details": "Variables requeridas presentes",
+      "recommendation": "Verificar que todas las variables necesarias estén documentadas",
+      "timestamp": "2025-10-03T13:08:32.097Z"
+    },
+    {
+      "category": "Environment Files",
+      "item": "Frontend .env.production.example",
+      "status": "pass",
+      "details": "Variables requeridas presentes",
+      "recommendation": "Verificar que todas las variables necesarias estén documentadas",
+      "timestamp": "2025-10-03T13:08:32.097Z"
+    },
+    {
+      "category": "Environment Files",
+      "item": "Backend .env.example",
+      "status": "pass",
+      "details": "Variables requeridas presentes",
+      "recommendation": "Verificar que todas las variables necesarias estén documentadas",
+      "timestamp": "2025-10-03T13:08:32.097Z"
+    },
+    {
+      "category": "Security",
+      "item": ".env not in repo",
+      "status": "pass",
+      "details": "Archivo .env no está en repositorio",
+      "recommendation": "",
+      "timestamp": "2025-10-03T13:08:32.097Z"
+    },
+    {
+      "category": "Security",
+      "item": ".env.production not in repo",
+      "status": "fail",
+      "details": "PELIGRO: Archivo .env en repositorio",
+      "recommendation": "Eliminar archivo .env del repositorio y agregarlo a .gitignore",
+      "timestamp": "2025-10-03T13:08:32.097Z"
+    },
+    {
+      "category": "Security",
+      "item": ".env not in repo",
+      "status": "fail",
+      "details": "PELIGRO: Archivo .env en repositorio",
+      "recommendation": "Eliminar archivo .env del repositorio y agregarlo a .gitignore",
+      "timestamp": "2025-10-03T13:08:32.097Z"
+    },
+    {
+      "category": "Terraform Files",
+      "item": "provider.tf",
+      "status": "pass",
+      "details": "Archivo encontrado",
+      "recommendation": "",
+      "timestamp": "2025-10-03T13:08:32.098Z"
+    },
+    {
+      "category": "Terraform Files",
+      "item": "backend_ecs.tf",
+      "status": "pass",
+      "details": "Archivo encontrado",
+      "recommendation": "",
+      "timestamp": "2025-10-03T13:08:32.098Z"
+    },
+    {
+      "category": "Terraform Files",
+      "item": "frontend_s3.tf",
+      "status": "pass",
+      "details": "Archivo encontrado",
+      "recommendation": "",
+      "timestamp": "2025-10-03T13:08:32.098Z"
+    },
+    {
+      "category": "Terraform Files",
+      "item": "ecr.tf",
+      "status": "pass",
+      "details": "Archivo encontrado",
+      "recommendation": "",
+      "timestamp": "2025-10-03T13:08:32.098Z"
+    },
+    {
+      "category": "Terraform Files",
+      "item": "iam.tf",
+      "status": "pass",
+      "details": "Archivo encontrado",
+      "recommendation": "",
+      "timestamp": "2025-10-03T13:08:32.098Z"
+    },
+    {
+      "category": "Terraform Files",
+      "item": "outputs.tf",
+      "status": "pass",
+      "details": "Archivo encontrado",
+      "recommendation": "",
+      "timestamp": "2025-10-03T13:08:32.098Z"
+    },
+    {
+      "category": "Terraform Configuration",
+      "item": "terraform.tfvars.example",
+      "status": "warn",
+      "details": "Algunas variables pueden faltar",
+      "recommendation": "Verificar que todas las variables de terraform.tfvars.example estén definidas",
+      "timestamp": "2025-10-03T13:08:32.098Z"
+    },
+    {
+      "category": "Deployment Readiness",
+      "item": "terraform.tfvars",
+      "status": "pass",
+      "details": "Archivo de variables listo",
+      "recommendation": "Copiar terraform.tfvars.example a terraform.tfvars y llenar con valores reales",
+      "timestamp": "2025-10-03T13:08:32.098Z"
+    },
+    {
+      "category": "Terraform Validation",
+      "item": "Syntax Check",
+      "status": "pass",
+      "details": "Sintaxis de Terraform válida",
+      "recommendation": "",
+      "timestamp": "2025-10-03T13:08:34.956Z"
+    },
+    {
+      "category": "Docker Configuration",
+      "item": "docker-compose.yml",
+      "status": "pass",
+      "details": "LocalStack: true, Ports: true, Services: true",
+      "recommendation": "Verificar configuración completa de LocalStack",
+      "timestamp": "2025-10-03T13:08:34.957Z"
+    },
+    {
+      "category": "Docker Installation",
+      "item": "Docker Engine",
+      "status": "pass",
+      "details": "Docker disponible",
+      "recommendation": "",
+      "timestamp": "2025-10-03T13:08:34.970Z"
+    },
+    {
+      "category": "Docker Installation",
+      "item": "Docker Compose",
+      "status": "pass",
+      "details": "Docker Compose disponible",
+      "recommendation": "",
+      "timestamp": "2025-10-03T13:08:34.988Z"
+    },
+    {
+      "category": "Frontend Build",
+      "item": "Package Scripts",
+      "status": "pass",
+      "details": "Dev: true, Build: true, Preview: true",
+      "recommendation": "Verificar que todos los scripts necesarios estén definidos",
+      "timestamp": "2025-10-03T13:08:34.988Z"
+    },
+    {
+      "category": "Frontend Dependencies",
+      "item": "Critical Dependencies",
+      "status": "pass",
+      "details": "Todas las dependencias críticas presentes",
+      "recommendation": "Instalar dependencias faltantes con npm install",
+      "timestamp": "2025-10-03T13:08:34.988Z"
+    },
+    {
+      "category": "Backend Build",
+      "item": "Package Scripts",
+      "status": "pass",
+      "details": "Start: true, Dev: true",
+      "recommendation": "Verificar scripts de inicio del backend",
+      "timestamp": "2025-10-03T13:08:34.988Z"
+    },
+    {
+      "category": "Frontend Build",
+      "item": "Build Test",
+      "status": "pass",
+      "details": "Build exitoso",
+      "recommendation": "Revisar errores de build y dependencias",
+      "timestamp": "2025-10-03T13:08:36.325Z"
+    },
+    {
+      "category": "LocalStack Status",
+      "item": "Service Health",
+      "status": "pass",
+      "details": "5 servicios activos: ec2, iam, s3, sqs, sts",
+      "recommendation": "",
+      "timestamp": "2025-10-03T13:08:36.340Z"
+    },
+    {
+      "category": "LocalStack Services",
+      "item": "Required Services",
+      "status": "warn",
+      "details": "2/4 servicios requeridos disponibles",
+      "recommendation": "Verificar configuración de servicios en docker-compose.yml",
+      "timestamp": "2025-10-03T13:08:36.340Z"
+    },
+    {
+      "category": "AWS Tools",
+      "item": "AWS CLI",
+      "status": "pass",
+      "details": "Instalado: aws-cli/2.31.6 Python/3.13.7 Darwin/24.5.0 source/arm64",
+      "recommendation": "",
+      "timestamp": "2025-10-03T13:08:36.697Z"
+    },
+    {
+      "category": "AWS Configuration",
+      "item": "Credentials",
+      "status": "pass",
+      "details": "Credenciales configuradas",
+      "recommendation": "",
+      "timestamp": "2025-10-03T13:08:36.937Z"
+    },
+    {
+      "category": "Security Configuration",
+      "item": ".gitignore",
+      "status": "warn",
+      "details": "Faltan: .terraform",
+      "recommendation": "Agregar patrones faltantes a .gitignore",
+      "timestamp": "2025-10-03T13:08:36.937Z"
+    },
+    {
+      "category": "Security Scan",
+      "item": "Hardcoded Credentials",
+      "status": "warn",
+      "details": "Posibles credenciales encontradas en código",
+      "recommendation": "Revisar y mover credenciales a variables de entorno",
+      "timestamp": "2025-10-03T13:08:36.954Z"
+    }
+  ]
+}
